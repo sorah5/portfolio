@@ -269,7 +269,7 @@ padding: 20px 40px;
 .work_con{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 
 }
@@ -352,4 +352,27 @@ padding: 20px 40px;
     padding: 18px;
     background-color: var(--color-white);
     border-radius: var(--size-border-radius);
+}
+
+/* contact */
+#contact{
+    background-color: var(--color-pink);
+}
+.contact__title, 
+.contact__email,
+.contact__rights,
+.contact__name{
+    color: var(--color-white);
+}
+.contact__title{
+    margin: 32px 0;
+}
+.contact__link{
+    font-size: var(--font-large);
+    margin: 24px 0;
+    transition: all 0.3s ease-in;
+}
+.contact__link i:hover{
+    transform: scale(1.1);
+    color: var(--color-yellow);
 }
