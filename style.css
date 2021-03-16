@@ -26,6 +26,8 @@
   --size-border-radius:4px;
   --animation-duration: 0.3s;
 }
+
+/* -------------------------------- */
   *{
       box-sizing: border-box;
   }
@@ -76,6 +78,7 @@
     margin: 4px 0;
 }
 
+/* navbar */
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -149,6 +152,7 @@
      max-width: 1200px;
      margin: auto;
 }
+
 /* about */
 .about__majors{
     display: flex;
@@ -214,6 +218,7 @@
     font-size: var(--font-micro);
 }
 
+
 /* skill */
 #skills{
     background-color: var(--color-yellow);
@@ -261,9 +266,16 @@ padding: 20px 40px;
 
 
 /* work */
+.work_con{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+
+}
 .work__projects{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
 }
 .project{
@@ -312,4 +324,32 @@ padding: 20px 40px;
     margin-left: -12px;
     margin-top: 8px;
     background-color: var(--color-dark-white);
+}
+
+/* testimonial */
+#testimonials{
+    
+    background-color: var(--color-light-white);
+}
+.testimonials{
+    display: flex;
+    margin: 40px;
+}
+.testimonial {
+    
+    margin: 32px 0;
+}
+.testimonial__avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+.testimonial__avatar:nth-child(odd){
+    margin-right: 40px;
+}
+.testimonial__speech-bubble{
+    padding: 18px;
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
 }
