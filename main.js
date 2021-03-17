@@ -12,7 +12,7 @@ document.addEventListener('scroll',() =>{
     }
 });
 
-// 네비바 메뉴 누를떄 이동
+// 네비바 메뉴 누를때 이동
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
@@ -29,8 +29,25 @@ contact.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
+// 홈을 투명하게 만들기
+const home= document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll',() =>{
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+
+
+
+
+
+
+
+
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:'smooth'});
 }
+
