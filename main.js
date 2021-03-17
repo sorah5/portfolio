@@ -38,10 +38,21 @@ document.addEventListener('scroll',() =>{
 
 
 
+// 화살표 보이게 하기 
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight / 2){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+});
 
-
-
-
+// 화살표 누르면 위로
+const arrow = document.querySelector('.home__container');
+document.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 
 
 
