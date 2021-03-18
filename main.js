@@ -20,9 +20,16 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null){
         return;
     }
+   navbarMenu.classList.remove('open');
    scrollIntoView(link);
 });
 
+// 네비 토글동작
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+    
+});
 // contact으로 이동 
 const contact = document.querySelector('.home__contact');
 contact.addEventListener('click', () => {
@@ -49,8 +56,7 @@ document.addEventListener('scroll', () => {
 });
 
 // 화살표 누르면 위로
-const arrow = document.querySelector('.home__container');
-document.addEventListener('click', () => {
+arrowUp.addEventListener('click',() =>{
     scrollIntoView('#home');
 });
 
