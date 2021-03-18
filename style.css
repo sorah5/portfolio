@@ -127,7 +127,7 @@
 
 .navbar__toggle-btn{
     position: absolute;
-    top: 24px;
+    top: 13px;
     right: 32px;
     font-size: 24px;
     color: var(--color-white);
@@ -158,6 +158,9 @@
     padding: 8px 12px;
     border:2px solid var(--color-white) ;
     border-radius: 4px;
+}
+.home__contact:hover{
+    background-color: var(--color-dark-pink);
 }
 .section{
     text-align: center;
@@ -402,6 +405,7 @@ padding: 20px 40px;
     opacity: 0;
     transition: all 0.3s ease-in;
     pointer-events: none;
+    border: 1px solid var(--color-light-white);
 }
 .arrow-up.visible{
     opacity: 1;
@@ -410,8 +414,18 @@ padding: 20px 40px;
 }
 
 @media screen and (max-width:768px){
+:root{
+    --font-large:30px;
+    --font-medium:18px;
+    --font-regular:16px;
+    --font-small:14px;
+    --font-micro:12px;
+}
 .navbar__toggle-btn{
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: medium;
 }
 #navbar{
     flex-direction: column;
@@ -430,11 +444,17 @@ padding: 20px 40px;
 .navbar__menu.open{
     display: block;
 }
+.section{
+    padding: 16px;
+    padding-top:40px ;
+}
 .about__majors{
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 .major{
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 }
 .skillset{
     flex-direction: column;
@@ -446,4 +466,11 @@ padding: 20px 40px;
     width: 80px;
     height: 80px;
 }
+.arrow-up{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
 }
